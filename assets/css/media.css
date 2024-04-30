@@ -1,0 +1,149 @@
+
+@media(max-width:1200px){
+    .site-logo img {
+        max-width: 200px;
+   }
+    .nav-links ul {
+        gap: 40px;
+   }
+    .nav-links ul li a {
+        font-size: 13px;
+   }
+    .container {
+        padding: 0 20px;
+   }
+    .banner-txt h2 {
+        /* font-size: 30px; */
+   }
+   
+}
+@media(max-width:991px){
+    .nav-links ul li a {
+        color: #fff;
+    }
+    .toggle{
+        display: block;
+   }
+    .toggle i {
+        color: #000;
+        font-size: 25px;
+   }
+    .nav-links ul {
+        gap: 20px;
+        flex-direction: column;
+        align-items: self-start;
+        padding: 50px 30px;
+   }
+    .nav-links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        background-color: #000;
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: all 0.3s linear;
+        z-index: 999;
+   }
+    .close{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+   }
+    .close i {
+        color: #fff;
+        font-size: 25px;
+   }
+    .menuToggle .nav-links {
+        transform: translateX(0%);
+   }
+    .site-banner {
+        height: 75vh;
+   }
+    .banner-txt h2 {
+        /* font-size: 25px; */
+   }
+  
+    .footer-logo {
+        margin-bottom: 20px;
+   }
+   
+  
+   
+   .footer-info {
+    width: 90%;
+}
+#cookies-popup p, #cookies-popup button {
+    font-size: 14px;
+}
+}
+@media(max-width:767px){
+    h2 {
+        font-size: 2rem;
+    }
+    .site-logo img {
+        max-width: 170px;
+   }
+    .toggle i, .close i {
+        font-size: 22px;
+   }
+    .site-header {
+        padding: 15px 15px;
+       /* background: #333;
+        */
+   }
+    
+    .ptb-50 {
+        padding: 30px 0;
+   }
+   
+   .footer-info {
+    width: 100%;
+}
+h3 {
+    font-size: 1.8rem;
+}
+p {
+    font-size: 0.9rem;
+}
+}
+@media(max-width:575px){
+    .nav-links {
+        width: 100%;
+    }
+    .container {
+        padding: 0 10px;
+   }
+  
+    .site-banner {
+        height: 50vh;
+   }
+    .footer-info ul {
+        gap: 10px;
+   }
+ 
+    .footer-logo img {
+        width: 190px;
+   }
+    .footer-info ul li a, .banner-txt p,  .copy-right p,  .confidentiality p, .confidentiality ul li {
+        font-size: 12px;
+   }
+    .footer-logo {
+        margin-bottom: 10px;
+   }
+    .ptb-70 {
+        padding: 50px 0;
+   }
+    
+
+}
+@media(max-width:375px){
+   
+    .ptb-50 {
+        padding: 25px 0;
+   }
+    .ptb-70 {
+        padding: 30px 0;
+   }
+}
