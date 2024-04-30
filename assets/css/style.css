@@ -145,6 +145,7 @@ p{
     box-shadow: rgb(255 144 46 / 52%) 0px 5px 15px;
     padding: 10px;
     margin-bottom: 20px;
+    height: 100%;
 }
 .adventure-txt {
     padding: 5px;
