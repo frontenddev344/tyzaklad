@@ -32,6 +32,9 @@ img{
 .ptb-30{
     padding: 30px 0;
 }
+.pt-50{
+    padding-top:50px;
+}
 h2{
     font-size: 3rem;
 }
@@ -39,6 +42,14 @@ h3 {
     font-size: 2.2rem;
     color: #179ac9;
     line-height: 1.1;
+    font-weight: 700;
+}
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #179ac9;
+
 }
 p{
     font-size: 1rem;
@@ -130,7 +141,25 @@ p{
     width: 75%;
     margin: 0 auto;
 }
-
+.adventure-card {
+    box-shadow: rgb(255 144 46 / 52%) 0px 5px 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.adventure-txt {
+    padding: 5px;
+}
+.adventure-txt h4{
+    padding: 10px 0;
+}
+.adventure-img {
+    height: 230px;
+}
+.adventure-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
  /* site body css end here */
 
 
