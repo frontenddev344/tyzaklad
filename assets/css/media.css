@@ -12,9 +12,37 @@
     .container {
         padding: 0 20px;
    }
-    .banner-txt h2 {
-        /* font-size: 30px; */
-   }
+   h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 30px;
+}
+h4 {
+    font-size: 22px;
+}
+
+.restro-txt h5 {
+    font-size: 20px;
+}
+.adventure-card {
+    height: 350px;
+}
+.restro-box {
+    height: 250px;
+}
+.footer-logo img {
+    width: 250px;
+}
+html, p{
+    font-size: 15px;
+}
+.casino-img {
+    height: 250px;
+}
+.casino-txt p {
+    min-height: 250px;
+}
    
 }
 @media(max-width:991px){
@@ -77,10 +105,38 @@
 #cookies-popup p, #cookies-popup button {
     font-size: 14px;
 }
+.site-header {
+    padding: 15px 0;
+}
+.casino-txt p {
+    min-height: 230px;
+}
+.disclaimber-txt h5 {
+    font-size: 20px;
+    color: var(--primary);
+    font-weight: 600;
+}
+.disclaimber-txt p {
+    font-size: 13px;
+}
 }
 @media(max-width:767px){
-    h2 {
-        font-size: 2rem;
+    .sub-banner {
+        height: 300px;
+    }
+    .casino-img {
+        height: 220px;
+    }
+    .disclaimber-txt h5 {
+        font-size: 18px;
+        color: var(--primary);
+        font-weight: 600;
+    }
+    .casino-txt p {
+        min-height: auto;
+    }
+    .casino-txt a {
+        padding: 8px 15px;
     }
     .site-logo img {
         max-width: 170px;
@@ -89,7 +145,7 @@
         font-size: 22px;
    }
     .site-header {
-        padding: 15px 15px;
+        /* padding: 15px 15px; */
        /* background: #333;
         */
    }
@@ -101,11 +157,61 @@
    .footer-info {
     width: 100%;
 }
-h3 {
-    font-size: 1.8rem;
+h2 {
+    font-size: 35px;
 }
-p {
-    font-size: 0.9rem;
+.site-banner {
+    height: 60vh;
+}
+h3 {
+    font-size: 25px;
+}
+.site-heading {
+    width: 95%;
+}
+html, p {
+    font-size: 14px;
+}
+.ptb-70 {
+    padding: 50px 0;
+}
+.pt-50 {
+    padding-top: 30px;
+}
+h4 {
+    font-size: 20px;
+}
+.adventure-txt {
+    padding: 20px;
+}
+.adventure-card {
+    height: 300px;
+}
+.restro-txt h5 {
+    font-size: 18px;
+}
+.restro-box {
+    height: 200px;
+    margin-bottom: 15px;
+}
+.accordion {
+    width: 95%;
+    max-width: 100%;
+}
+.pt-30 {
+    padding-top: 10px;
+}
+.accordion-item {
+    margin: 8px 0;
+}
+.footer-logo img {
+    width: 200px;
+}
+.footer-logo {
+    margin-bottom: 10px;
+}
+.casino-txt a {
+    font-weight: 400;
 }
 }
 @media(max-width:575px){
@@ -136,10 +242,46 @@ p {
         padding: 50px 0;
    }
     
-
+   .site-logo img {
+    max-width: 150px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 22px;
+}
+.pt-50 {
+    padding-top: 20px;
+}
+.adventure-txt h4 {
+    padding: 0px 0;
+}
+h4 {
+    font-size: 18px;
+}
+.adventure-txt p {
+    margin-bottom: 0;
+}
+.accordion-item-header {
+    padding: 10px 10px;
+}
 }
 @media(max-width:375px){
-   
+    .footer-logo img {
+        width: 170px;
+    }
+    .site-header {
+        padding: 10px 0;
+    }
+    .adventure-txt {
+        padding: 10px;
+        width: 95%;
+        height: 95%;
+    }
+    .adventure-card:hover .adventure-txt{
+        height: 95%;
+    }
     .ptb-50 {
         padding: 25px 0;
    }

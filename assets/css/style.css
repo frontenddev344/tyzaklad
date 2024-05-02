@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root{
+    --primary:#179AC9;
+    --Secondary :#EE982B;
+    --white:#fff;
+    --black:#000;
+    --bg:#C9F7FF;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -35,24 +43,34 @@ img{
 .pt-50{
     padding-top:50px;
 }
+.pt-30{
+    padding-top: 30px;
+}
 h2{
-    font-size: 3rem;
+    font-size: 45px;
+    line-height: 1.1;
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
 }
 h3 {
-    font-size: 2.2rem;
-    color: #179ac9;
+    font-size: 35px;
+    color: var(--primary);
     line-height: 1.1;
     font-weight: 700;
 }
 h4 {
-    font-size: 1.5rem;
+    font-size: 25px;
     line-height: 1.1;
     font-weight: 600;
-    color: #179ac9;
+    color: var(--primary);
 
 }
 p{
-    font-size: 1rem;
+    font-size: 16px;
+}
+.bg{
+    background-color: var(--bg);
 }
 /* global css end here */
 /* header css start here */
@@ -60,7 +78,7 @@ p{
     padding: 20px 20px;
     width: 100%;
     z-index: 99;
-    background: #fff;
+    background:var(--white);
 }
 .site-logo img {
     max-width: 220px;
@@ -117,12 +135,7 @@ p{
     opacity: 0.1;
 }
 .banner-txt h2 {
-    /* font-size: 35px; */
-    line-height: 1.1;
-    color: #ffffff;
     width: 80%;
-    font-weight: 600;
-    text-transform: uppercase;
 }
 .banner-abt{
     display: flex;
@@ -141,27 +154,254 @@ p{
     width: 75%;
     margin: 0 auto;
 }
-.adventure-card {
-    box-shadow: rgb(255 144 46 / 52%) 0px 5px 15px;
-    padding: 10px;
+.adventure-wrap {
     margin-bottom: 20px;
-    height: 100%;
+}
+.adventure-card {
+    box-shadow: rgb(0 0 0 / 43%) 0px 5px 10px;
+    padding: 10px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.adventure-card:hover .adventure-txt{
+    height: 80%;
+     visibility: visible;
 }
 .adventure-txt {
-    padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 0%;
+    visibility: hidden;
+    background-color: #000000c2;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s linear ;
+    -webkit-transition: all 0.3s linear ;
+    -moz-transition: all 0.3s linear ;
+    -ms-transition: all 0.3s linear ;
+    -o-transition: all 0.3s linear ;
 }
 .adventure-txt h4{
     padding: 10px 0;
 }
+.adventure-txt p{
+    color: #fff;
+}
 .adventure-img {
-    height: 230px;
+    height: 100%;
 }
 .adventure-img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
+.restro-box {
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    overflow: hidden;
+}
+.restro-box::before, .restro-box::after{
+content: '';
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: #000;
+opacity: 0.2;
+}
+.restro-box::after{
+    height: 0;
+}
+.restro-box:hover::after{
+    opacity: 0.5;
+    transition: all 0.5s linear;
+height: 100%;
+}
+.restro-box img {
+    height: 100%;
+    object-fit: cover;
+}
+.restro-txt {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.restro-txt h5 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: 0;
+    font-weight: 600;
+    text-align: center;
+}
+/* faq css start here */
+
+
+
+
+
+
+
+
+
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 20px 0 rgb(189 189 189 / 62%);
+}
+
+.accordion-item-header {
+  padding: 15px 20px;
+  line-height: 1.1;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  /* border-top: 1px solid; */
+  /* border-image: linear-gradient(to right, transparent, #34495e, transparent) 1; */
+}
+.accordion-item-header.active{
+    background-color: var(--Secondary);
+}
+
+
+
+
+
  /* site body css end here */
+.sub-banner{
+    background-image: url(../images/sub-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+}
+.sub-banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+}
+.sub-banner .container{
+    height: 100%;
+}
+.sub-banner-txt{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.casino-cards {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.casino-img {
+    height: 300px;
+}
+.casino-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.casino-txt {
+    padding: 15px;
+    /* background-color: var(--white); */
+}
+.casino-txt a{
+    padding: 10px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--Secondary);
+    color: var(--white);
+    border: 1px solid #ff902e;
+    display: inline-block;
+    width: fit-content;
+    margin-top: 10px;
+    transition: all 0.3s linear;
+
+}
+.casino-txt a:hover{
+    background-color: var(--primary);
+    border-color: #179AC9;
+}
+.casino-txt p {
+    min-height: 230px;
+}
+.disclaimber-txt h5 {
+    font-size: 22px;
+    color: var(--primary);
+    font-weight: 600;
+}
+.disclaimber-txt p{
+    font-size: 14px;
+}
+/* sub pages css start here */
+
+
+
+
+/* sub pages css end here */
+
 
 
 
@@ -203,7 +443,7 @@ footer{
 
 
 .footer-info ul li a:hover{
-    color: #b39700;
+    color: var(--Secondary);
     transition: all 0.3s linear;
   
 }
