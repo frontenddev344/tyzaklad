@@ -45,7 +45,7 @@ html, p{
 }
    
 }
-@media(max-width:991px){
+@media(max-width:992px){
     .nav-links ul li a {
         color: #fff;
     }
@@ -89,9 +89,7 @@ html, p{
     .site-banner {
         height: 75vh;
    }
-    .banner-txt h2 {
-        /* font-size: 25px; */
-   }
+  
   
     .footer-logo {
         margin-bottom: 20px;
@@ -121,6 +119,16 @@ html, p{
 }
 }
 @media(max-width:767px){
+    .dining-wrap {
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .dining-left, .dining-right {
+        width: 100%;
+    }
+    .dining-right {
+        padding: 10px;
+    }
     .sub-banner {
         height: 300px;
     }
@@ -144,11 +152,7 @@ html, p{
     .toggle i, .close i {
         font-size: 22px;
    }
-    .site-header {
-        /* padding: 15px 15px; */
-       /* background: #333;
-        */
-   }
+  
     
     .ptb-50 {
         padding: 30px 0;
@@ -215,6 +219,9 @@ h4 {
 }
 }
 @media(max-width:575px){
+    .sub-banner-txt h2 {
+        font-size: 22px;
+    }
     .nav-links {
         width: 100%;
     }
