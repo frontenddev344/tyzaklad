@@ -184,10 +184,7 @@ p{
     text-align: center;
     overflow: hidden;
     transition: all 0.3s linear ;
-    -webkit-transition: all 0.3s linear ;
-    -moz-transition: all 0.3s linear ;
-    -ms-transition: all 0.3s linear ;
-    -o-transition: all 0.3s linear ;
+
 }
 .adventure-txt h4{
     padding: 10px 0;
@@ -197,6 +194,12 @@ p{
 }
 .adventure-img {
     height: 100%;
+    overflow: hidden;
+ 
+}
+.adventure-card:hover img{
+    transform: scale(1.5);
+    transition: all 0.5s linear;
 }
 .adventure-img img{
     height: 100%;
@@ -218,7 +221,7 @@ left: 0;
 height: 100%;
 width: 100%;
 background-color: #000;
-opacity: 0.2;
+opacity: 0.4;
 }
 .restro-box::after{
     height: 0;
@@ -328,6 +331,12 @@ height: 100%;
     height: 400px;
     position: relative;
 }
+.event-banner{
+    background-image: url(../images/event-banner.jpg);
+}
+.dining-banner{
+    background-image: url(../images/dining-banner.jpg);
+}
 .sub-banner::before{
     content: '';
     position: absolute;
@@ -336,7 +345,7 @@ height: 100%;
     width: 100%;
     height: 100%;
     background-color: #000;
-    opacity: 0.3;
+    opacity: 0.7;
 }
 .sub-banner .container{
     height: 100%;
@@ -410,8 +419,31 @@ width: 50%;
 }
 .dining-left{
     height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.dining-left::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 9;
+    transition: all 0.5s linear;
+}
+.dining-left:hover::before{
+    height: 100%;
+}
+.dining-left:hover img{
+    transform: scale(1.3);
+
 }
 .dining-left img{
+    transition: all 0.5s linear;
+
     height: 100%;
     width: 100%;
     object-fit: cover;
